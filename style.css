@@ -1,3 +1,4 @@
+
 :root {
   --bg-primary: #07152d;
   --bg-secondary: #0d2348;
@@ -25,13 +26,8 @@ html {
 
 body {
   font-family: var(--font-main);
-  background:
-    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08) 1px, transparent 1px),
-    radial-gradient(circle at 80% 30%, rgba(255,255,255,0.06) 1px, transparent 1px),
-    radial-gradient(circle at 40% 70%, rgba(255,255,255,0.07) 1px, transparent 1px),
-    linear-gradient(180deg, var(--bg-primary), var(--bg-secondary));
-  background-size: 120px 120px, 150px 150px, 180px 180px, cover;
-  color: var(--text-main);
+  background: #ffffff;
+  color: #1b1b1b;
   min-height: 100vh;
 }
 
@@ -205,19 +201,18 @@ body {
 }
 
 h2 {
+  color: #111;
   font-size: 2.2rem;
   margin-bottom: 40px;
 }
 
-.cards,
-.gallery-box {
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
 }
 
-.card,
-.mini-box {
+.card {
   background: var(--card-bg);
   border: 1px solid var(--border-light);
   border-radius: var(--radius);
@@ -225,14 +220,14 @@ h2 {
   transition: 0.35s;
 }
 
-.card:hover,
-.mini-box:hover {
+.card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow);
 }
 
 .card p,
-.buy p {
+.buy p,
+.section-desc {
   color: var(--text-soft);
   margin-top: 10px;
   line-height: 1.7;
@@ -245,6 +240,39 @@ h2 {
 .buy .btn {
   display: inline-block;
   margin-top: 24px;
+}
+
+/* Gallery Professional Layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.gallery-item {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  transition: 0.35s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
 }
 
 /* Responsive */
