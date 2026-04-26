@@ -1,0 +1,101 @@
+# index.html
+
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEGO WALL-E | Tanıtım Sitesi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fixed Navbar -->
+  <header class="navbar">
+    <div class="logo">LEGO WALL·E</div>
+    <nav>
+      <a href="#hero">Ana Sayfa</a>
+      <a href="#features">Özellikler</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#buy">Satın Al</a>
+    </nav>
+  </header>
+
+  <!-- Sticky Sidebar -->
+  <aside class="sidebar">
+    <h3>Hızlı Bilgi</h3>
+    <ul>
+      <li>811 Parça</li>
+      <li>18+ Yaş</li>
+      <li>Disney Pixar</li>
+      <li>Koleksiyon Serisi</li>
+    </ul>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <p class="tag">Collector Edition</p>
+      <h1>LEGO Disney Pixar<br>WALL·E Seti</h1>
+      <p>
+        700 yıl boyunca terk edilmiş Dünya'da yalnız başına temizlik yapan, küçük bir çöp sıkıştırma robotu olan WALL·E'nin ikonik tasarımını koleksiyonuna ekle. Paslı sarı gövdesi, ifade dolu gözleri ve unutulmaz sevimliliğiyle Pixar evreninin en özel karakterlerinden biri şimdi LEGO formunda karşında. Detaylı parçaları, nostaljik görünümü ve film sahnelerini yeniden canlandıran tasarımıyla gerçek bir koleksiyon deneyimi sunar.
+      </p>
+
+      <div class="buttons">
+        <a href="#buy" class="btn primary">Şimdi İncele</a>
+        <a href="#features" class="btn secondary">Detayları Gör</a>
+      </div>
+    </div>
+
+    <!-- Relative + Absolute Badge -->
+    <div class="hero-image-container">
+      <span class="badge">Yeni!</span>
+      <img src="wall-e.jpg" alt="LEGO WALL-E" class="hero-image">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <h2>Öne Çıkan Özellikler</h2>
+
+    <div class="cards">
+      <div class="card floating-card">
+        <h3>Premium Tasarım</h3>
+        <p>Filmde gördüğümüz paslı sarı gövde, teleskopik göz yapısı, ön kapak detayları ve paletli yürüyüş sistemi büyük özenle yeniden tasarlanmıştır. Özellikle WALL·E'nin yalnız ama umut dolu karakterini yansıtan yüz ifadesi koleksiyon severler için oldukça etkileyicidir.</p>
+      </div>
+
+      <div class="card">
+        <h3>Hareketli Parçalar</h3>
+        <p>WALL·E'nin baş kısmı farklı açılarda hareket ettirilebilir, kolları pozlandırılabilir ve palet sistemi sayesinde filmdeki keşif sahnelerini anımsatan dinamik sergilemeler yapılabilir. İster EVE ile sahne oluştur ister tek başına sergile.</p>
+      </div>
+
+      <div class="card">
+        <h3>Koleksiyonluk</h3>
+        <p>EVE, MO ve HAL gibi filmde yer alan yardımcı karakter detaylarıyla birlikte gelen bu set, yalnızca bir oyuncak değil aynı zamanda güçlü bir nostalji parçasıdır. Disney Pixar hayranları ve LEGO koleksiyoncuları için uzun yıllar sergilenebilecek premium bir koleksiyon ürünüdür.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <h2>Galeri</h2>
+    <div class="gallery-box">
+      <div class="mini-box">EVE</div>
+      <div class="mini-box">WALL·E</div>
+      <div class="mini-box">MO</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="buy" id="buy">
+    <h2>Koleksiyonuna Kat</h2>
+    <p>Bir bitkiyi koruyarak insanlığın geleceğini değiştiren küçük robotun hikayesini masanda yeniden yaşat. WALL·E'nin duygusal yolculuğunu ve EVE ile olan unutulmaz bağını bu özel koleksiyon setiyle keşfet.</p>
+    <a href="#" class="btn primary">Satın Al</a>
+  </section>
+
+</body>
+</html>
