@@ -1,3 +1,6 @@
+Site Linki
+https://melisa1377.github.io/urun_tanitimi/
+
 # Ödev 7: Bir Ürün İçin Tanıtım Sitesi 
 Sevdiğiniz herhangi bir ürün için tek sayfalık responsive bir tanıtım sitesi oluşturun.
 
